@@ -1,4 +1,5 @@
 from src.mini_biblioteca.livros import Livro
+from src.mini_biblioteca.usuarios import Usuario
 
 
 class Emprestimo():
@@ -8,4 +9,8 @@ class Emprestimo():
         self.ativo = True
     
     def criar():
-        self.disponivel = False
+        self.livro.disponivel = False
+
+    def devolver():
+        self.ativo = False
+        self.livro.disponivel = True
